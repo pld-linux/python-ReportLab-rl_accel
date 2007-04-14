@@ -8,7 +8,7 @@ License:	distributable
 Group:		Libraries/Python
 Source0:	http://www.reportlab.org/daily/rl_accel-%{version}-daily-unix.tgz
 # Source0-md5:	3ab351d94797eda2ef77d6b88426597f
-URL:		http://www.reportlab.com/
+URL:		http://www.reportlab.org/
 BuildRequires:	python-devel >= 1:2.4
 %pyrequires_eq	python
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
