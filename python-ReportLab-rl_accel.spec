@@ -1,13 +1,13 @@
-%define		_snap	20070412
+%define		_snap	20071106
 Summary:	A C coded extension accelerator for the ReportLab Toolkit
 Summary(pl.UTF-8):	Napisany w C akcelerator rozszerzeń dla toolkitu ReportLab
 Name:		python-ReportLab-rl_accel
-Version:	0.60
+Version:	0.61
 Release:	1
 License:	distributable
 Group:		Libraries/Python
 Source0:	http://www.reportlab.org/daily/rl_accel-%{version}-daily-unix.tgz
-# Source0-md5:	3ab351d94797eda2ef77d6b88426597f
+# Source0-md5:	9a0fb2cf175bdcd6bafb92b19dc15047
 URL:		http://www.reportlab.org/
 BuildRequires:	python-devel >= 1:2.4
 %pyrequires_eq	python
@@ -39,4 +39,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%{py_sitedir}/_rl_accel-%{version}-py*.egg-info
 %attr(755,root,root) %{py_sitedir}/*.so
