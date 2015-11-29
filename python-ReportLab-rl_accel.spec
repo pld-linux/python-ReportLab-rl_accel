@@ -9,6 +9,7 @@ Group:		Libraries/Python
 Source0:	http://www.reportlab.org/daily/rl_accel-%{version}-daily-unix.tgz
 # Source0-md5:	9a0fb2cf175bdcd6bafb92b19dc15047
 URL:		http://www.reportlab.org/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	python-devel >= 1:2.5
 BuildRequires:	rpm-pythonprov
 %pyrequires_eq	python
